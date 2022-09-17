@@ -1,0 +1,46 @@
+	ติดตั้่ง Tailwind CSS
+-เข้าเว็บ https://tailwindcss.com/docs/installation
+-ทำ ตามขั้นตอน 1-5
+  - 1 รันคำ สั่งใน cmd
+    - 1.1 รันคำ สั่งนี้ใน cmd >> npm install -D tailwindcss
+    - 1.2 รันคำ  สั่งนี้ใน cmd >> npx tailwindcss init
+    
+  - 2 เปิดไฟล์ tailwind.config.js ในโฟล์เดอร์ที่ติดตั้ง tailwind
+    - 2.1 ก็อป >> content: ["./src/**/*.{html,js}"], ในเว็บ ไปวางในไฟล์ tailwind.config.js วางแทนที่คำ >> content:[],
+    
+  - 3 สร้างโฟร์เดอร์ src ขึ้นใน โปรเจคที่ติดตั้ง tailwind
+    - 3.1 สร้างไฟล์ input.css ไว้ในโฟล์เดอร์ src
+    - 3.2 ก็อป เนื้อหา จากหน้าเว็บ หัวข้อที่ 3 มาวางไว้ในไฟล์ input.css 
+    - 3.3 ก็อปอันนี้มาวาง >> @tailwind base;
+                        @tailwind components;
+                        @tailwind utilities;
+                        
+  - 4 รันคำ สั่งนี้ใน cmd >> npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+  
+  - 5 สร้างไฟล์ index.html ในโฟล์เดอร์ src  
+    - 5.1 เพิ่มแท็ก หรือ ลิงค์ไฟล์ output.css เข้าไปในไฟล์ index.html เพิ่มประโยคนี้เข้าไปใน head >>  <link rel="stylesheet" href="../dist/output.css">
+
+ถ้าปิดการรันคำสั่งใน cmd จะไม่สามารถ ปรับแต่ง แก้ไข tailwindCSS ได้ 
+- ปิดรัน tailwind กด >> CTRL + C >> กด Y
+- รันคำ สั่งเปิดใช้งาน >> npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch 
+  - เปลี่ยนคำ สั่งรันเปิดใช้งาน
+   - เข้าไปที่ ไฟล์ package.json 
+   - แก้ไขเนื้อหาในไฟล์ให้เป็นแบบนี้  >>
+{
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  },"scripts": {
+    "build":"npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  }
+}
+
+_____________________________________ สามาใช้ >> nam run build == รันใช้งาน tailwindCSS แทนคำสั่งเดิมได้ _________________________________
+
+
+
+
+
+
+
+
+
