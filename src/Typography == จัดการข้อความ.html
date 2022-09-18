@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>จัดการข้อความ (Typography) </title>
+      <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body>
+
+      <!-- bg == สีพื้นหลัง ความเข้มของสี มี 100 > 900 -->
+      <!-- text-ตามด้วยสี == สีฟอนต์ มีความเข้ม 100 > 900 -->
+      <!-- text-ตามด้วยขนาด == ขนาดข้อความ เรียงจากเล็กไปใหญ่ sm>4xl -->
+      <!-- รูปแบบข้อความ (Style) -->
+            <!-- uppercase == ตัวพิมพ์ใหญ่ -->
+            <!-- lowercase == ตัวพิมพ์เล็ก -->
+            <!-- capitalize == ตัวแรกเป็นพิมพ์ใหญ่ -->
+            <!-- italic == ตัวเอียง -->
+      <!-- font-ตามด้วยความหนา == ความหนา - บาง เรียงจากบางไปหนาสุด font-thin > font-black  -->
+      <!-- text-ตามด้วยตำแหน่ง == ตำแหน่งข้อความ center = ตรงกลาง ,left = ซ้าย , right = ขวา -->
+      <!-- text-opacity-ตามด้วยเลข == ความโปร่งใสข้อความ มี 0 > 100 ("เอาเลขความเข้มสีข้อความออกด้วย") -->
+      <div class="bg-red-500">
+            <div class="text-white-200 font-thin text-sm uppercase text-center">Hello World</div>
+            <div class="text-white-700 font-extralight text-base lowercase text-left">Hello World</div>
+            <div class="text-white-700 font-light text-lg capitalize text-right">Hello World</div>
+            <div class="text-white font-normal text-xl italic text-opacity-0">Hello World</div>
+            <div class="text-white font-medium text-2xl text-opacity-10">Hello World</div>
+            <div class="text-white-700 font-semibold text-4xl">Hello World</div>
+            <div class="text-white-700 font-bold ">Hello World</div>
+            <div class="text-white-700 font-extrabold ">Hello World</div>
+            <div class="text-white-700 font-black ">Hello World</div>
+      </div>
+</body>
+
+</html>
