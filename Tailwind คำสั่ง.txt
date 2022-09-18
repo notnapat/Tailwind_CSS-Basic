@@ -36,7 +36,11 @@
 
 _____________________________________ สามาใช้ >> nam run build == รันใช้งาน tailwindCSS แทนคำสั่งเดิมได้ _________________________________
 
+ขนาดข้อความ (Font Size) >> https://tailwindcss.com/docs/font-size
+ความหนาข้อความ (Font Weight) >> https://tailwindcss.com/docs/font-weight
 
+ความกว้างของกล่อง >> https://tailwindcss.com/docs/width
+ความสูงของกล่อง >> https://tailwindcss.com/docs/height
 
 
 
