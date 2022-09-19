@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Border</title>
+      <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body>
+      <!-- Border == ขนาดเส็นขอบ  >> https://tailwindcss.com/docs/border-width -->
+            <!-- border == ทุกด้าน , border-0,1,2,4,8 ขนาดของเส้นทุกด้าน ใช้ได้แค่ตัวเลขที่ระบุ หนวยเป็น px -->
+            <!-- border-t,r,b,l,x,y-0,1,2,4,8  -->
+      <!-- Border Color == สีเส้นขอบ >> https://tailwindcss.com/docs/border-color -->
+            <!-- border-สี-ความเข้มของสี -->
+      <!-- Border Style == รูปแบบเส้นขอบ -->
+            <!-- border-none = ไม่มีเส้นขอบ , border-solid = เส้นทึบ หรือ เส้นตรง ,  -->
+            <!-- border-dashed = เส้นปะ , border-dotted = เส้นจุด , border-double = เส้นคู่ -->
+      <button class="bg-green-500 text-white m-10 p-5 border border-red-500 border-dashed">Click</button>
+      <button class="bg-green-500 text-white m-10 p-5 border-0 border-red-700 ">Click</button>
+      <button class="bg-green-500 text-white m-10 p-5 border-4 border-red-500 border-double">Click</button>
+      <button class="bg-green-500 text-white m-10 p-5 border-b-8 border-red-500 border-dotted">Click</button>
+
+
+      <!-- Border Radius == ความโค้งเส้นขอบ       -->
+            <!-- rounded = โค้งค่าเริ่มต้น   -->
+            <!-- rounded-sm >> full == โค้งจากเล็กไปมาก -->
+            <!-- rounded-t,b,r,l-ต่อด้วยขนาดความโค้ง -->
+      <button class="bg-green-500 text-white m-10 p-5 rounded ">Click</button>
+      <button class="bg-green-500 text-white m-10 p-5 rounded-sm  ">Click</button>
+      <button class="bg-green-500 text-white m-10 p-5 rounded-md  ">Click</button>
+      <button class="bg-green-500 text-white m-10 p-5 rounded-lg  ">Click</button>
+      <button class="bg-green-500 text-white m-10 p-5 rounded-2xl  ">Click</button>
+      <button class="bg-green-500 text-white m-10 p-5 rounded-3xl  ">Click</button>
+      <button class="bg-green-500 text-white m-10 p-5 rounded-full  ">Click</button>
+      <button class="bg-green-500 text-white m-10 p-5 rounded-t-md rounded-l-3xl  ">Click</button>
+
+
+</body>
+</html>
