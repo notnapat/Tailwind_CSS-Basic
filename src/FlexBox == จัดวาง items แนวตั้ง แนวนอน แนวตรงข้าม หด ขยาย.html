@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Container and Breakpoint</title>
+      <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body >
+<!-- Flex Direction == จัดวาง items แนวตั้ง แนวนอน แนวตรงข้าม -->
+<!-- flex == เรียงแนวนอนชิดซ้าย itemเริ่มต้นเรียงจากซ้าย ไปขวา -->
+<!-- flex-row == flex -->
+<!-- flex-row-reverse == เรียงแนวนอนซิดขวา item เริ่มต้นเรียงจากขวา ไปซ้าย-->
+
+<!-- flex-col == เรียงแนวตั้งซิดซ้าย item เริ่มต้นเรียงจากบน ลงล่าง -->
+<!-- flex-col-reverse == เรียงแนวตั้งซิดซ้าย item เริ่มต้นเรียงจากล่าง ขึ้นบน -->
+<h3>Flex Direction</h3> 
+<div class="bg-yellow-500 w-auto flex flex-col-reverse">
+      <div class="w-10 h-10 bg-red-500">Box 1</div>
+      <div class="w-10 h-10 bg-red-500">Box 2</div>
+      <div class="w-10 h-10 bg-red-500">Box 3</div>
+</div>
+
+<br>
+<!-- Wrap Flexltem == กรณีที่ขนาด items ใหญ่กว่าพื้นที่ container -->
+<!-- flex-nowrap == พื้นที่เหลือจาก item ทั้งหมด ให้ไปอยู่ขวาสุด -->
+<!-- flex-wrap == พื้น่ที่ไม่พอกับขนาด item จะดีด item ตัวสุดท้ายลงล่าง -->
+<!-- flex-wrap-reverse == พื้นที่ไม่พอกับขนาด item จะดีด item ตัวสุดท้ายขึ้นบน -->
+<h3>Wrap Flexltem</h3>
+<div class="bg-yellow-500 w-auto flex flex-wrap-reverse">
+      <div class="w-80 h-10 bg-red-500">Box 1</div>
+      <div class="w-80 h-10 bg-red-500">Box 2</div>
+      <div class="w-80 h-10 bg-red-500">Box 3</div>
+</div>
+<br>
+
+<!-- Grow and Shrink  -->
+<!-- flex-1 == ทําให้ item ที่อยู่ในแถวเดียวกันมีขนาดเท่ากัน และเต็มพื้นที่ comtainer -->
+
+<h3>Grow and Shrink</h3>
+<div class="bg-yellow-500 w-auto flex ">
+      <div class="w-80 h-10 bg-red-500 flex-1">Box 1</div>
+      <div class="w-80 h-10 bg-red-500 flex-1">Box 2</div>
+      <div class="w-80 h-10 bg-red-500 flex-1">Box 3</div>
+</div>
+<br>
+
+<!-- Grow == ให้ item ขยายจํานวนเท่าใดเมื่อเทียบกับ item อื่นๆ (ค่าเริ่มต้นเป็น 0) -->
+<h4>Grow</h4>
+<div class="bg-yellow-500 w-auto flex">
+      <div class="w-80 h-10 bg-red-500 flex-grow">Box 1</div>
+      <div class="w-80 h-10 bg-green-500 ">Box 2</div>
+      <div class="w-80 h-10 bg-yellow-500 ">Box 3</div>
+</div>
+<br>
+
+<!-- Shrink == ให้ item หดตัวจํานวนเท่าใดเมื่อเทียบกับ item อื่นๆ (ค่าเริ่มต้นเป็น 1) -->
+<h4>Shrink</h4>
+<div class="bg-yellow-500 w-auto flex">
+      <div class="w-80 h-10 bg-red-500 flex-auto">Box 1</div>
+      <div class="w-80 h-10 bg-green-500 flex-shrink">Box 2</div>
+      <div class="w-80 h-10 bg-yellow-500 flex-auto">Box 3</div>
+</div>
+</body>
+
+</html>
