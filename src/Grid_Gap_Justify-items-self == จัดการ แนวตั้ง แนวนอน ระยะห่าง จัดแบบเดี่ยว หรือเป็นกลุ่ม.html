@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Container and Breakpoint</title>
+      <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body >
+
+      <!-- grid == เรียงใช้งาน grid เพื่อจัดการ แถวแนวตั้ง แถวแนวนอนพร้อมกัน -->
+      <!-- grid-cols-จำนวนแถวแนวตั้ง == จัดการแถวแนวตั้ง -->
+      <!-- grid-rows-จำนวนแถวแนวนอน == จัดการแถวแนวนอน -->
+
+      <!-- gap-จำนวนหน่วยระยะห่าง == ระยะห่างระหว่างทุุกกล่อง คล้าย margin -->
+      <!-- gap-x,y-จำนวนหน่วยระยะห่าง == สามารถระบุระยะห่าง เฉพาะ แกน x หรือ y  หรือจะระบุทั้ง2แกนแต่คนละช่องว่างก็ได้ -->
+<h2>Grid and Gap</h2>
+<div class="bg-yellow-500 w-auto grid grid-cols-3 grid-rows-3 gap-4 ">
+      <div class=" h-10 bg-red-500">Box 1</div>
+      <div class=" h-10 bg-red-500">Box 2</div>
+      <div class=" h-10 bg-red-500">Box 3</div>
+      <div class=" h-10 bg-red-500">Box 4</div>
+      <div class=" h-10 bg-red-500">Box 5</div>
+      <div class=" h-10 bg-red-500">Box 6</div>
+      <div class=" h-10 bg-red-500">Box 7</div>
+      <div class=" h-10 bg-red-500">Box 8</div>
+      <div class=" h-10 bg-red-500">Box 9</div>
+</div>
+<br>
+
+<!-- Justify-Items == จัดวาง item ทุกตัวที่อยู่ในแถว -->
+      <!-- justify-items-ตำแหน่งที่ต้องการจัดวาง == start = ชิดซ้าย , center = กึ่งกลาง , end = ชิดขวา , stretch = ปรับขนาด item ทั้งหมดให้เต็มพื้นที่ -->
+<h5>Justify-Items</h5>
+<div class="bg-yellow-500 w-auto grid justify-items-center ">
+      <div class=" h-10 bg-red-500">Box 1</div>
+      <div class=" h-10 bg-red-500">Box 2</div>
+      <div class=" h-10 bg-red-500">Box 3</div>
+</div>
+<br>
+
+<!-- Justify-Self == จัดวางตำแหน่งเฉพาะ item ที่ระบุ หรือ เฉพาะ item ที่ต้องการ -->
+      <!-- jusitfy-self-start , center , end == ระบุตำแหน่งที่ต้องการจัดวาง -->
+<h5>Justify-Self</h5>
+<div class="bg-yellow-500 w-auto grid  ">
+      <div class=" h-10 bg-red-500 justify-self-start">Box 1</div>
+      <div class=" h-10 bg-red-500 justify-self-center">Box 2</div>
+      <div class=" h-10 bg-red-500 justify-self-end">Box 3</div>
+</div>
+</body>
+</html>

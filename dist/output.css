@@ -602,6 +602,10 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-40 {
   height: 10rem;
 }
@@ -642,6 +646,14 @@ video {
   flex-grow: 1;
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -668,6 +680,26 @@ video {
 
 .flex-nowrap {
   flex-wrap: nowrap;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.justify-self-start {
+  justify-self: start;
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
+.justify-self-center {
+  justify-self: center;
 }
 
 .rounded {
