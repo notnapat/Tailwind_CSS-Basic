@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Lay er and Apply == สร้างตัวแปล CSS กำหนดตัวแปล เป็น แท็ก  class หรือ id ก็ได้ */
+      /* base == จริงๆใช้อะไรเป็นตัวแปลก็ใช้งานได้  แต่น่าจะให้ใช้ได้แค่แท็ก */
+      /* components == น่าจะให้ใช้แค่ class */
+      /* utilities class == ใช้ปรับแต่ง แก้ไข class ของ tailwind  */
+@layer base{
+      a{
+      @apply   text-white m-10 bg-yellow-200
+      }
+}
+
+@layer components {
+      .menu-button{
+            @apply text-white bg-red-600 p-3
+      }
+}
+
+@layer utilities {
+      .text-green-400{
+            color:#d60993;
+            font-size:1rem;
+            font-weight:300;
+      }
+}
